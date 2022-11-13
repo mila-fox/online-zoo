@@ -10,6 +10,19 @@
     user-select: none;
 }
 
+
+header,
+main,
+footer {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+header {
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
 h1 {
     font-weight: 400;
     font-size: 19px;
@@ -44,7 +57,8 @@ h3 {
     text-align: center;
     text-transform: uppercase;
     font-size: 16px;
-    line-height: 22px;
+    line-height: 22.4px;
+    font-weight: 500;
     border: 0;
 }
 
@@ -119,14 +133,18 @@ header {
 .menu {
     list-style-type: none;
     margin: 0 0 0 63px;
+    display: flex;
 }
 
 .menu li {
     display: inline-block;
-    margin-right: 58px;
     font-weight: 500;
     font-size: 16px;
-    line-height: 22px;
+    line-height: 22.4px;
+}
+
+.menu li:not(:last-child) {
+    margin-right: 58px;
 }
 
 .menu a,
@@ -233,10 +251,16 @@ footer h3 {
     height: 42px;
     border-radius: 2px;
     color: #FFFFFF;
-    background:#000000;
+    background: transparent;
     border: 0.7px solid #F9804B;
     padding: 10px 7px 10px 10px;
     margin-right: 10px;
+}
+
+.footer-input:active,
+.footer-input:focus
+{
+    border-color: #4B9200;
 }
 
 ::placeholder {
@@ -246,21 +270,24 @@ footer h3 {
     color: #BDBDBD;
 }
 
-.wrapper-submit {
+.form-subscribe {
     display: flex;
 }
 
 .footer-submit {
-    height:42px;
     background: #F1F3F2;
-    border: 1px solid #4B9200;
+    border: 1px solid #333B41;
     border-radius: 5px;
     font-weight: 400;
     font-size: 16px;
     line-height: 22.4px;
+    padding: 0 38px;
+}
+
+.footer-submit:hover {
+    cursor: pointer;
+    border: 1px solid #4B9200;
     color: #4B9200;
-    padding-left: 39px;
-    padding-right: 39px;
 }
 
 .footer-right {
@@ -284,4 +311,12 @@ footer .menu li:last-child {
 
 footer .wrapper-right {
     display: flex;
+}
+
+.social-media li:hover span {
+    color: #4B9200;
+}
+
+.social-media li:hover .footer-icons {
+    background: #4B9200;
 }

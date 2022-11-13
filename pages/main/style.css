@@ -3,15 +3,9 @@
     background: url(/assets/images/Giant\ Panda.jpg) ;
 }
 
-body {
-    max-width: 1600px;
-    margin: 0 auto;
-}
-
-
 .circle {
-    width: 460px;
-    height: 460px;
+    width: 465px;
+    height: 465px;
     margin-top: 92px;
     margin-right: 108.31px;
     border-radius: 50%;
@@ -29,7 +23,7 @@ body {
 .circle-text {
     position: absolute;
     top: 74px;
-    left: 73px;
+    left: 82px;
 }
 
 .content {
@@ -59,11 +53,16 @@ body {
 
 .backstage {
     padding-top: 140px;
+    padding-bottom: 74px;
     position: relative;
 }
 
 .backstage .content {
     display: flex;
+}
+
+.backstage .text {
+    color: #333B41;
 }
 
 .img-bamboo {
@@ -75,7 +74,7 @@ body {
 }
 
 .favorite {
-    padding-top: 180px;
+    padding-top: 100px;
     position: relative;
 }
 
@@ -96,10 +95,11 @@ body {
     background: #4b9200;
 }
 
+
 .flower {
     position: absolute;
     top: 12px;
-    right: -40px;
+    right: 0;
 }
 
 .favorite .content {
@@ -119,23 +119,62 @@ body {
     opacity: 0.9;
 }
 
-.favorite .img-wrapper {
-    width: 366px;
-    height: 366px;
+.fo-paragraph a {
+    text-decoration: none;
+    color:  #333B41;
+    display: inline-block;
+    border-bottom: 1px solid #FE9013;
 }
 
-.favorite ul {
+.animals-list .img-wrapper {
+    width: 366px;
+    height: 366px;
+    overflow: hidden;
+    position: relative;
+}
+
+.animals-list {
     display: flex;
     flex-wrap: wrap;
     row-gap: 20px;
     column-gap: 30px;
 }
 
-.favorite li {
+.animals-list li {
+    position: relative;
     overflow: hidden;
     width: 366px;
     border-radius: 5px;
     border: 1px solid #F9804B;
+}
+
+.overlay {
+    position: absolute;
+    width: 366px;
+    height: 366px;
+    background: black;
+    opacity: 0.6;
+}
+
+.animals-list li:hover {
+    cursor: pointer;
+}
+
+.animals-list li:hover .img-wrapper img {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 386px;
+}
+
+.animals-list .title {
+    position: relative;
+    transition: 0.5s;
+}
+
+.animals-list li:hover .title {
+    color: white;
+    transform: translateY(-55px);
 }
 
 .favorite .card-content {
@@ -174,13 +213,13 @@ body {
 .strelitzia {
     position: absolute;
     bottom: 0;
-    right: -38px;
+    right: 0;
 }
 
 .palm {
     position: absolute;
     bottom: 0;
-    left: -40px;
+    left: 0;
 }
 
 .feed .content {
@@ -253,9 +292,13 @@ body {
     justify-content: center;
 }
 
-.card span {
+.list-cards .card span {
     display: block;
     margin-top: 30px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22.4px;
+    color: #333B41;
 }
 
 .list-cards .card {
@@ -356,11 +399,46 @@ body {
 
 .testimonials button {
     border-radius: 5px;
-    margin-top: 58px;
+    margin-top: 31px;
 }
 
 .testimonials .leav {
     position: absolute;
-    right: -40px;
+    right: 0px;
     bottom: -130px;
+}
+
+.slidecontainer {
+    margin: 21px auto 0;
+    width: 599px;
+    height: 8px;
+    position: relative;
+    border-radius: 5px;
+    background: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+}
+
+.slider {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 597px;
+    height: 6px;
+    border-radius: 5px;
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    background: #F5F7F6;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 115.19px;
+    height: 6px;
+    border-radius: 5px;
+    background: #FE9013;
+    cursor: pointer;
+
 }
