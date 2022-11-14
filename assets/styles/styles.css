@@ -320,3 +320,9 @@ footer .wrapper-right {
 .social-media li:hover .footer-icons {
     background: #4B9200;
 }
+
+.footer-designed:hover div {
+    color: #4B9200;
+    text-decoration-line:underline;
+}
+
