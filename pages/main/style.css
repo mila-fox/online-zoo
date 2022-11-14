@@ -26,11 +26,6 @@
     left: 82px;
 }
 
-.content {
-    max-width: 1160px;
-    margin: 0 auto;
-}
-
 .animal .content {
     display: flex;
     flex-direction: column;
