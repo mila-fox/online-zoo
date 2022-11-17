@@ -303,6 +303,11 @@ main {
     display: block;
 }
 
+.container-radio-feed input:checked ~ .checkmark {
+    background: #4B9200;
+    border: 1px solid #4B9200;
+}
+
 .container-radio-feed .checkmark:after {
     top: 50%;
     left: 50%;
@@ -310,7 +315,6 @@ main {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background: #FE9013;
 }
 
 .online:hover {
@@ -324,7 +328,8 @@ main {
     margin-left: 6px;
 }
 
-.yout-friends {font-weight: 400;
+.you-friends {
+    font-weight: 400;
     font-size: 16px;
     line-height: 22.4px;
     color: #333B41;
@@ -333,6 +338,25 @@ main {
     padding-left: 5px;
 }
 
+.btn.online:active {
+    background: #4b9200;
+}
+
 footer {
     transform: translateY(76px);
+}
+
+.footer-input:invalid ~ input {
+    color: #D31414;
+    border: 1px solid #D31414;
+}
+
+.footer-input:valid ~ input {
+    border: 1px solid #333B41;
+    color: #000000;
+}
+
+.footer-input:valid ~ input:hover {
+    border: 1px solid #4B9200;
+    color: #4B9200;
 }
