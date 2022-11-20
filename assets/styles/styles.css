@@ -267,7 +267,7 @@ footer h3 {
     border-color: #4B9200;
 }
 
-::placeholder {
+.footer-input::placeholder {
     font-weight: 400;
     font-size: 16px;
     line-height: 22.4px;
