@@ -360,3 +360,45 @@ footer {
     border: 1px solid #4B9200;
     color: #4B9200;
 }
+
+@media screen and (max-width: 1599px) {
+    main {
+        max-width: unset;
+    }
+
+    .donate-anime {
+        margin-top: 4px;
+        background-position-x: -172px;
+    }
+
+    .color-text-white {
+        padding-bottom: 30px;
+        padding-left: 30px;
+        padding-right: 192px;
+        text-align: unset;
+    }
+
+    .donate-inform p {
+        padding-left: 31px;
+        padding-right: 30px;
+    }
+
+    .color-text-orange {
+        padding-top: 45px;
+        padding-bottom: 40px;
+        padding-left: 31px;
+    }
+
+    .donate-container {
+        margin: 0 30px 30px 30px;
+        padding: 10px 0 46px 0;
+    }
+
+    #donate-h2 {
+        padding: 9px 0 10px 0;
+    }
+
+    #donate-p {
+        padding: 0 44px 0 47px;
+    }
+}

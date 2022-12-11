@@ -1,6 +1,9 @@
 .animal {
     height: 780px;
-    background: url(../../assets/images/Giant\ Panda.jpg) ;
+    background: url(../../assets/images/Giant\ Panda.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
 }
 
 .circle {
@@ -34,6 +37,10 @@
 
 .circle span {
     color: #FFEE2E;
+}
+
+.nogradient {
+    background-color: #F9804B;
 }
 
 .animal .btn {
@@ -90,6 +97,9 @@
     background: #4b9200;
 }
 
+.waw-arrow {
+    display: none;
+}
 
 .flower {
     position: absolute;
@@ -214,7 +224,7 @@
 .palm {
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: -590px;
 }
 
 .feed .content {
@@ -338,7 +348,6 @@
     border-radius: 20px;
     width: 268px;
     padding: 2px;
-    width: 268px;
     background: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
 }
 
@@ -399,7 +408,7 @@
 
 .testimonials .leav {
     position: absolute;
-    right: 0px;
+    right: -162px;
     bottom: -130px;
 }
 
@@ -435,4 +444,665 @@
     border-radius: 5px;
     background: #FE9013;
     cursor: pointer;
+}
+
+@media screen and (max-width: 1599px) {
+    .content {
+        max-width: unset;
+    }
+
+    .animal {
+        height: 58.4vw;
+    }
+
+    .flower {
+        display: none;
+    }
+
+    .circle {
+        width: 367px;
+        height: 367px;
+        font-size: 85px;
+        line-height: 63.75px;
+        margin-top: 6.9%;
+        margin-right: 17.7%;
+    }
+
+    .circle-text {
+        top: 53.8px;
+        left: 65px;
+    }
+
+    .animal .btn {
+        margin-top: 4.7%;
+        margin-right: 13.7%;
+    }
+
+    .img-bamboo img {
+        width: 45.5vw;
+        height: 40.8vw;
+        object-fit: cover;
+    }
+
+    .img-bamboo {
+        margin-right: 3.1vw;
+        padding-top: 9px;
+        padding-bottom: 10px;
+    }
+
+    .backstage {
+        padding-top: 100px;
+        padding-bottom: 140px;
+        padding-left: 3vw;
+        padding-right: 3vw;
+    }
+
+    .favorite {
+        padding-top: 0px;
+        padding-bottom: 34px;
+    }
+
+    .favorite .content {
+        margin: 0 30px;
+    }
+
+    .animals-list .img-wrapper {
+        width: 29.4vw;
+        height: 29.4vw;
+    }
+
+    .animals-list img {
+        block-size: inherit;
+    }
+
+    .animals-list li  {
+        width: 29.4vw;
+    }
+
+    .overlay {
+        width: 29.4vw;
+        height: 29.4vw;
+        block-size: inherit;
+    }
+
+    .strelitzia {
+        width: 24.1vw;
+        height: 18.0vw;
+    }
+
+    .palm {
+        width: 38.6vw;
+        height: 20.2vw;
+        left: -9.8%;
+    }
+
+    .backstage {
+        padding-top: 100px;
+        padding-bottom: 138px;
+    }
+
+    .arrow {
+        position: absolute;
+    }
+
+    .left {
+        left: calc(30px + 32.3vw);
+    }
+
+    .right {
+        right: calc(30px + 32.3vw);
+    }
+
+    .animals-list {
+        row-gap: 92px;
+        column-gap:unset;
+        justify-content:space-between;
+    }
+
+    .feed {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+
+    .feed h3 {
+        margin: 20px 0;
+    }
+
+    .feed h4 {
+        margin-top: 40px;
+    }
+
+    .btn online {
+       margin-top: 70px;
+    }
+
+    .favorite .online {
+        margin-bottom: 104px;
+        margin-top: 79px;
+    }
+
+    .paragraph {
+        margin-left: 50px;
+    }
+
+    .feed .content {
+        padding-bottom: 50px;
+        padding-top: 30px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .first-paragraph {
+        margin-right: 80px;
+    }
+
+    .fo-paragraph {
+        margin-right: 80px;
+    }
+
+    .feed .online {
+        margin-top: 70px;
+    }
+
+    .testimonials {
+        padding-top: 100px;
+        padding-bottom: 139px;
+    }
+
+    .testimonials h2 {
+        margin-bottom: 30px;
+    }
+
+    .wraper-testimonials {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .testimonials-card {
+        width: 291px;
+    }
+
+    .testimonials button {
+        margin-left: 30px;
+        margin-top: 53px;
+    }
+
+    .testimonials .leav {
+        width: 204px;
+        bottom: -99px;
+    }
+
+    .testimonials-card:last-child {
+        display: none;
+        width: calc(1/3*100% - (1 - 1/3)*10px);
+    }
+
+    .slidecontainer,
+    .slider {
+        width: 391px;
+    }
+
+    .slider::-webkit-slider-thumb {
+        width: 75px;
+    }
+}
+
+@media screen and (max-width: 999px) {
+
+    .circle {
+        width: 37.03vw;
+        height: 37.03vw;
+        font-size: 13.28vw;
+        line-height: 9.96vw;
+        margin-top: 6.91vw;
+        margin-right: 10.95vw;
+    }
+
+    .circle-text {
+        font-size: 8.48vw;
+        line-height: 6.36vw;
+    }
+
+    .text {
+        width: 495px;
+    }
+
+    .img-bamboo {
+        display: none;
+    }
+
+    .flower {
+        display: block;
+        top: -1.09vw;
+        right: -4.84vw;
+        width: 161px;
+    }
+
+    .animal {
+        position: relative;
+    }
+
+    .animal .btn {
+        position: absolute;
+        bottom: 40px;
+        left: 20.21px;
+    }
+
+    .circle-text {
+        top: 6.1vw;
+        left: 6.2vw;
+    }
+
+    .backstage {
+        padding: 58px 0px 80px 22px;
+    }
+
+    .text h3 {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .animals-list li:nth-last-child(1),
+    .animals-list li:nth-last-child(2) {
+        display: none;
+    }
+
+    .animals-list .img-wrapper{
+        width: 44.53vw;
+        height: 44.53vw;
+    }
+
+    .animals-list li {
+        width: 44.53vw;
+    }
+
+    .favorite .content {
+        margin: 0 20px 0 20px;
+    }
+
+    .favorite .online {
+        margin-top: 56px;
+        margin-bottom: 100px;
+    }
+
+    .right {
+        margin-top: 1px;
+        margin-bottom: 19px;
+        right: calc(30px + 33.3vw);
+    }
+
+    .left {
+        margin-top: 1px;
+        margin-bottom: 19px;
+        left: calc(30px + 33.2vw);
+    }
+
+    .overlay {
+        width: 44.53vw;
+        height: 44.53vw;
+    }
+
+    .favorite .title .first-line {
+        font-size: 12.47px;
+        line-height: 17.46px;
+    }
+
+    .favorite .title .second-line {
+        font-size: 11.69px;
+        line-height: 14.03px;
+    }
+
+    .favorite .card-content {
+        padding: 5px 15px 6px 12px;
+    }
+
+    .animals-list {
+        row-gap: 85px;
+    }
+
+    .favorite {
+        padding-bottom: 0;
+    }
+
+    .strelitzia {
+        width: 27.34vw;
+        height: 20.46vw;
+    }
+
+    .palm {
+        width: 60.15vw;
+        height: 31.56vw;
+        left: -39vw;
+    }
+
+    .feed .content {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .feed {
+        padding-top: 20px;
+        padding-bottom: 17px;
+    }
+
+    .feed .content {
+        padding-top: 10px;
+        padding-right: 20px;
+        padding-bottom: 60px;
+        padding-left: 20px;
+    }
+
+    .pick {
+        font-size: 42px;
+        line-height: 50.4px
+    }
+
+    .feed h3 {
+        font-size: 22px;
+        line-height: 26.4px
+    }
+
+    .feed p {
+        font-size: 16px;
+        line-height: 20.8px;
+        margin-right: 0;
+    }
+
+    .paragraph {
+        margin-left: 0;
+    }
+
+    .feed h4 {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .waw-arrow {
+        display: block;
+        right: -60px;
+        position: absolute;
+        top: -18px;
+        z-index: 1;
+    }
+
+    .img-arrow {
+        display: none;
+    }
+
+    .list-cards .img-wrapper {
+        position: relative;
+        width: 168px;
+    }
+
+    .feed .online {
+        margin-top: 40px;
+    }
+
+    .list-cards {
+        justify-content: space-between;
+        padding-right: 12px;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .img-arrow {
+        margin-right: 54px;
+        margin-left: 0;
+    }
+
+    .testimonials {
+        padding: 60px 20px 0 20px ;
+    }
+
+    .wraper-testimonials {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .testimonials-card {
+        width: 100%;
+        height: 109px;
+    }
+
+    .testimonials ul {
+        flex-direction: column;
+        row-gap: 15px;
+    }
+
+    .slidecontainer, .slider {
+        display: none;
+    }
+
+    .testimonials-contend {
+        overflow: hidden;
+        height: 86px;
+    }
+
+    .testimonials-card-inner {
+        padding: 15px 29px 8px 12px;
+    }
+
+    .testimonials button {
+        margin: 40px auto 81px auto;
+        display: block;
+    }
+
+    .testimonials button {
+        width: 37.5vw ;
+    }
+
+    .testimonials .leav {
+        right: -89px;
+        bottom: -70px;
+    }
+}
+
+@media screen and (max-width: 639px) {
+    main {
+        margin-top: 34px;
+    }
+
+    .animal .btn {
+        bottom: -74px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding-left: 5px;
+        padding-right: 1px;
+    }
+
+    .circle {
+        width: 37.21vw;
+        height: 37.21vw;
+        margin-top: 6.92vw;
+        margin-right: 11.87vw;
+    }
+
+    .circle-text {
+        font-size: 8.75vw;
+        line-height: 6.56vw;
+        top: 6vw;
+    }
+
+    .animal {
+        overflow:visible;
+    }
+
+    .text h2 {
+        font-size: 7.5vw;
+        line-height: 9vw;
+        margin: 30px 10px 10px 10px;
+    }
+    .backstage {
+        padding: 74px 0 0 0;
+    }
+
+    .first-text {
+        padding: 0 11px 20px 12px;
+    }
+
+    .text h3 {
+        margin: 0 95px 10px 12px;
+    }
+
+    .second-text {
+        margin: 0 10px 37px 10px;
+    }
+
+    .flower {
+        top: 11.56vw;
+        right: -12.81vw;
+        width: 23.12vw;
+    }
+
+    .favorite .arrow {
+        display: none;
+    }
+
+    .favorite {
+        padding: 0 17.76px 0 17px ;
+    }
+
+    .animals-list li {
+        width: 89.13vw;
+    }
+
+    .animals-list .img-wrapper {
+        width: 89.13vw;
+        height: 89.13vw;
+    }
+
+    .overlay {
+        width: 89.13vw;
+        height: 89.13vw;
+    }
+
+    .animals-list {
+        row-gap: 21px;
+    }
+
+    .favorite .online {
+        margin-top: 22px;
+        margin-bottom: 60px;
+    }
+
+    .strelitzia {
+        width: 26.56vw;
+        height: 22.18vw;
+        right: -17.5px;
+        bottom: -4px;
+    }
+
+    .palm {
+        width: 43.12vw;
+        height: 22.50vw;
+        left: -25vw;
+    }
+
+    .favorite .card-content {
+        padding: 6px 6px 6px 12px;
+    }
+
+    .favorite .card-content img {
+        width: 37.41px;
+        height: 29.62px;
+    }
+
+    .feed {
+        padding-left: 10px;
+        padding-right: 11px;
+        padding-bottom: 21px;
+    }
+
+    .pick {
+        font-size: 24px;
+        line-height: 28.8px;
+    }
+
+    .feed .content {
+        padding-top: 20px;
+        padding-bottom: 40px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .feed h3 {
+        font-size: 18px;
+        line-height: 21.6px;
+        text-align: center;
+        margin-top: 10px;
+        row-gap: 9px;
+    }
+
+    .feed p {
+        display: none;
+    }
+
+    .feed h4 {
+        margin-top: 20px;
+        font-size: 24px;
+        line-height: 28.8px;
+    }
+
+    .list-cards {
+        flex-direction: column;
+        align-items: center;
+        padding-right: 0;
+        row-gap: 20px;
+    }
+
+    .waw-arrow {
+        transform: rotate(85deg);
+        top: 196px;
+        right: -61px;
+    }
+
+    .waw-arrow:first-child {
+        top: 188px;
+    }
+
+    .feed .online {
+         margin-top: 31px;
+    }
+
+    .list-cards .card span {
+         margin-top: 10px;
+    }
+
+    .list-cards .card:first-child {
+        height: 222px;
+    }
+
+    .list-cards .card:not(:first-child) {
+        height: 231px;
+    }
+
+    .testimonials {
+        padding: 30px 10px 20px 11px;
+    }
+
+    .testimonials h2 {
+        margin-bottom: 20px;
+        font-size: 24px;
+        line-height: 28.8px;
+    }
+
+    .testimonials button {
+        width: 75vw;
+        margin: 30px auto 59px auto;
+    }
+
+    .testimonials .leav {
+        bottom: -32px;
+        transform: rotate(345deg);
+        width: 100px;
+        right: -46px;
+    }
+
+    .testimonials-card-inner {
+        padding: 11px 29px 12px 12px
+    }
+
+    .testimonials {
+        padding-bottom: 0;
+    }
 }
