@@ -505,6 +505,7 @@ footer .wrapper-right {
     .footer-left .btn {
         order: 1;
         margin-bottom: 30px;
+        margin-left: -3px;
     }
 
     footer .wrapper-menu {
@@ -523,7 +524,7 @@ footer .wrapper-right {
     }
 
     footer {
-        padding: 20px 9px 20px 9px;
+        padding: 23px 9px 20px 9px;
     }
 
     footer .logo img {

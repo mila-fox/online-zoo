@@ -522,6 +522,22 @@ footer {
     footer {
         transform: translateY(29.5px);
     }
+
+    .amount-wrapper span {
+        top: 8px;
+    }
+
+    .amount {
+        padding: 12px 10px 15px 6px;
+    }
+
+    .form-feed {
+        margin-top: 92px;
+    }
+
+    .feed-btn {
+        margin-top: 31px;
+    }
 }
 
 
@@ -676,5 +692,14 @@ footer {
 
     footer .menu {
         margin-left: 12px;
+    }
+
+    .form-feed {
+        margin-top: 39px;
+        margin-left: -2px;
+    }
+
+    .feed-btn {
+        margin-top: 28px;
     }
 }

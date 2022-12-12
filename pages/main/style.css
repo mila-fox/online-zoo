@@ -533,7 +533,7 @@
     .palm {
         width: 38.6vw;
         height: 20.2vw;
-        left: -9.8%;
+        left: -192px;
     }
 
     .backstage {
@@ -579,6 +579,7 @@
     .favorite .online {
         margin-bottom: 104px;
         margin-top: 79px;
+        background-color: #FE9013
     }
 
     .paragraph {
@@ -628,8 +629,10 @@
     }
 
     .testimonials .leav {
-        width: 204px;
-        bottom: -99px;
+        right: -130px;
+        width: 326px;
+        bottom: -85px;
+        height: 322px;
     }
 
     .testimonials-card:last-child {
@@ -721,18 +724,18 @@
     }
 
     .favorite .online {
-        margin-top: 56px;
+        margin-top: 60px;
         margin-bottom: 100px;
     }
 
     .right {
-        margin-top: 1px;
+        margin-top: 11px;
         margin-bottom: 19px;
         right: calc(30px + 33.3vw);
     }
 
     .left {
-        margin-top: 1px;
+        margin-top: 11px;
         margin-bottom: 19px;
         left: calc(30px + 33.2vw);
     }
@@ -753,11 +756,15 @@
     }
 
     .favorite .card-content {
-        padding: 5px 15px 6px 12px;
+        padding: 7px 9px 6px 12px;
+    }
+
+    .favorite .card-content img {
+        height: 29px;
     }
 
     .animals-list {
-        row-gap: 85px;
+        row-gap: 93px;
     }
 
     .favorite {
@@ -781,8 +788,8 @@
     }
 
     .feed {
-        padding-top: 20px;
-        padding-bottom: 17px;
+        padding-top: 18px;
+        padding-bottom: 19px;
     }
 
     .feed .content {
@@ -892,10 +899,16 @@
     }
 
     .testimonials .leav {
-        right: -89px;
-        bottom: -70px;
+        right: -88px;
+        bottom: -67px;
+        width: 203.8px;
+        height: 201.2px;
     }
-}
+    .text h2 {
+        padding-left: 2px;
+    }
+
+    }
 
 @media screen and (max-width: 639px) {
     main {
@@ -1088,14 +1101,15 @@
 
     .testimonials button {
         width: 75vw;
-        margin: 30px auto 59px auto;
+        margin: 30px auto 61px auto;
     }
 
     .testimonials .leav {
-        bottom: -32px;
-        transform: rotate(345deg);
-        width: 100px;
-        right: -46px;
+         bottom: -33px;
+        transform: rotate(346deg);
+        width: 103px;
+        right: -47px;
+        height: 99px;
     }
 
     .testimonials-card-inner {
