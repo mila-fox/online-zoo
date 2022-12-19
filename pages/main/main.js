@@ -48,10 +48,14 @@ function startAnimation() {
     favoriteRight.disabled = true;
 }
 
-function stopAnimation() {
+function stopAnimation(e) {
     isStartAnimation = false;
     favoriteLeft.disabled = false;
     favoriteRight.disabled = false;
+    const prevSlide = e.currentTarget.previousElementSibling;
+    if (prevSlide.style.position === 'absolute') {
+        prevSlide.remove();
+    }
 }
 
 function createNextSlide() {
@@ -117,10 +121,6 @@ function switchNextSlide() {
         const nextSlide = createNextSlide();
         favoriteContent.append(nextSlide);
         setTimeout(() => nextSlide.style.opacity = 1, 500);
-        const prevSlide = nextSlide.previousElementSibling;
-        if (prevSlide.style.position === 'absolute') {
-            prevSlide.remove();
-        }
     }
 }
 
