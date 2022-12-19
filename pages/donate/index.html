@@ -13,6 +13,26 @@
     <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+    <div class="body-overlay"></div>
+    <div class="main-menu bur-menu">
+            <div class="bur-navbar-left">
+                <a class="bur-logo" href="/../pages/main/index.htm">
+                    <h1>PetStory<br>online</h1>
+                    <img src="../../assets/icons/bamboo-color.svg" alt="bamboo">
+                </a>
+                <div>
+                    <ul class="bur-menu-active">
+                        <li class="bur-active"><a href="/../pages/main/index.htm">About</ahref=></li>
+                        <li><a href="#">Map</a></li>
+                        <li><a href="#">Zoos</a></li>
+                        <li><a href="../../pages/donate">Donate</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a class="bur-figma" href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks">Designed by ©</a></li>
+                    </ul>
+                </div>
+            </div>
+            <button class="bur-close"><img src="../../assets/icons/1x_icon.png" alt="close"></button>
+    </div>
     <header>
         <div class="navbar">
             <div class="navbar-left">
@@ -29,7 +49,7 @@
                         <li><a href="#">Contact us</a></li>
                     </ul>
                 </nav>
-                <div class="menu-btn">
+                <div class="header-burger-btn menu-btn">
                     <div class="menu-btn-div"></div>
                     <div class="menu-btn-div"></div>
                     <div class="menu-btn-div"></div>
@@ -151,7 +171,7 @@
                             </div>
                             <form class="form-feed" onsubmit="return false;">
                                 <div class="amount-wrapper">
-                                    <input class="amount" type="number" placeholder="Another amount" onKeyPress="if (this.value.length === 4) return false;" >
+                                    <input class="amount" type="number" placeholder="Another amount" onKeyPress="if (this.value.length === 4) return false;" value="100">
                                     <span>&#36;</span>
                                 </div>
                                 <div class="radio-feed-wrapper">
@@ -243,5 +263,7 @@
             </div>
         </div>
     </footer>
+    <script src="../../assets/js/script.js"></script>
+    <script src="./donate.js"></script>
 </body>
 </html>

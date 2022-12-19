@@ -10,6 +10,24 @@
     user-select: none;
 }
 
+body {
+    position: relative;
+}
+
+.body-overlay {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.7;
+    z-index: 10;
+}
+
+.body-overlay.active {
+    display: block;
+}
+
 .content {
     max-width: 1160px;
     margin: 0 auto;
@@ -108,14 +126,60 @@ header {
     justify-content: space-between;
 }
 
+.bur-menu {
+    display: none;
+    width: 640px;
+    padding: 10px;
+    align-items:flex-start;
+    justify-content: space-between;
+    position: fixed;
+    top: -5px;
+    right: 0;
+    z-index: 11;
+    background-color: #FFFFFF;
+}
+
+.bur-menu.active {
+    display: block;
+}
+
+.bur-navbar-left {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+}
+
 .navbar-left {
     display: flex;
     align-items: center;
 }
 
+.bur-logo {
+    position: relative;
+    border-color:#FE9013;
+    border: 1px solid #FE9013;
+    border-radius: 2px;
+    padding: 3.55px 4.75px;
+    width: fit-content;
+    height: fit-content;
+    font-size: 19px;
+    line-height: 22px;
+    text-decoration: none;
+    color: #FE9013;
+}
+
+.bur-close {
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background:none;
+}
+
 .logo {
     position: relative;
-    border-color: #FFFFFF;
+    border-color:#FFFFFF;
     border: 1px solid #FFFFFF;
     border-radius: 2px;
     padding: 3.55px 4.75px;
@@ -131,9 +195,25 @@ header {
     position: absolute;
     left: 11px;
     top: 23px;
+    color: #FE9013;
+}
+
+.bur-logo img {
+    position: absolute;
+    left: 11px;
+    top: 21px;
 }
 
 .logo span {
+    display: block;
+    font-weight: 400;
+    font-size: 19px;
+    text-align: center;
+    line-height: 22px;
+    margin: 0;
+}
+
+.bur-logo span {
     display: block;
     font-weight: 400;
     font-size: 19px;
@@ -148,12 +228,30 @@ header {
     display: flex;
 }
 
+.bur-menu-active {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30.4px;
+    row-gap: 15px;
+}
+
+
 .menu li {
     display: inline-block;
     font-weight: 500;
     font-size: 16px;
     line-height: 22.4px;
 }
+
+.bur-menu-active li {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22.4px;
+}
+
 
 .menu li:not(:last-child) {
     margin-right: 58px;
@@ -163,6 +261,18 @@ header {
 .figma {
     text-decoration: none;
     color: #FFFFFF;
+}
+
+.bur-menu a,
+.bur-figma {
+    text-decoration: none;
+    color: #333B41;
+}
+
+.bur-logo h1 {
+    color: #FE9013;
+    font-size: 15.21px;
+    line-height: 19px;
 }
 
 .menu .active a {
@@ -477,6 +587,11 @@ footer .wrapper-right {
 @media screen and (max-width: 639px) {
     .navbar {
         margin: 0 10px 0 10px;
+    }
+
+    .bur-menu {
+        width: 320px;
+        position: fixed;
     }
 
     .social-media {
