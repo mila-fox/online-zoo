@@ -13,9 +13,8 @@
     <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <div class="body-overlay">
-    </div>
-    <div class="bur-menu">
+    <div class="body-overlay"></div>
+    <div class="main-menu bur-menu">
             <div class="bur-navbar-left">
                 <a class="bur-logo" href="/../pages/main/index.htm">
                     <h1>PetStory<br>online</h1>
@@ -50,7 +49,7 @@
                         <li><a href="#">Contact us</a></li>
                     </ul>
                 </nav>
-                <div class="menu-btn">
+                <div class="header-burger-btn menu-btn">
                     <div class="menu-btn-div"></div>
                     <div class="menu-btn-div"></div>
                     <div class="menu-btn-div"></div>
@@ -172,7 +171,7 @@
                             </div>
                             <form class="form-feed" onsubmit="return false;">
                                 <div class="amount-wrapper">
-                                    <input class="amount" type="number" placeholder="Another amount" onKeyPress="if (this.value.length === 4) return false;" >
+                                    <input class="amount" type="number" placeholder="Another amount" onKeyPress="if (this.value.length === 4) return false;" value="100">
                                     <span>&#36;</span>
                                 </div>
                                 <div class="radio-feed-wrapper">
@@ -264,6 +263,7 @@
             </div>
         </div>
     </footer>
-    <script src="../script.js"></script>
+    <script src="../../assets/js/script.js"></script>
+    <script src="./donate.js"></script>
 </body>
 </html>

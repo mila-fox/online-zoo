@@ -1,15 +1,3 @@
-function openBurgerMenu() {
-    overlay.classList.add('active');
-    menuBurger.classList.add('active');
-    overlay.addEventListener('click', closeBurgerMenu);
-}
-
-function closeBurgerMenu() {
-    overlay.classList.remove('active');
-    menuBurger.classList.remove('active');
-    overlay.removeEventListener('click', closeBurgerMenu);
-}
-
 function showFullCard(e) {
     const screenWidth = window.screen.width;
     if (screenWidth <= 640) {
@@ -28,12 +16,12 @@ function hideFullCard(e) {
     overlay.removeEventListener('click', hideFullCard);
 }
 
-const btnBurgerMenu = document.querySelector('.header-burger-btn');
-const menuBurger = document.querySelector(".main-menu.bur-menu");
-const overlay = document.querySelector(".body-overlay");
-const burgerClose = document.querySelector('.main-menu .bur-close');
-btnBurgerMenu.addEventListener('click', openBurgerMenu);
-burgerClose.addEventListener('click', closeBurgerMenu);
+function handleInput() {
+    const screenWidth = window.screen.width;
+    const cardWidth = screenWidth >= 1600 ? 297 : 321;
+    const value = testimonialsInput.value;
+    testimonialsList.style.transform = `translateX(-${value*(cardWidth)}px)`;
+}
 
 const testimonialsCards = document.querySelectorAll('.testimonials-card');
 for (let card of testimonialsCards) {
@@ -41,3 +29,6 @@ for (let card of testimonialsCards) {
     card.querySelector('.popover-close').addEventListener('click', hideFullCard);
 }
 
+const testimonialsList = document.querySelector('.testimonials ul');
+const testimonialsInput = document.querySelector('.slidecontainer .slider');
+testimonialsInput.addEventListener('input', handleInput);
