@@ -14,7 +14,6 @@ function isEqualSlides(next, previous) {
            count +=1;
        }
     }
-    console.log(count);
     return count === next.length;
 }
 
@@ -117,7 +116,7 @@ function switchNextSlide() {
         startAnimation();
         const nextSlide = createNextSlide();
         favoriteContent.append(nextSlide);
-        setTimeout(() => nextSlide.style.opacity = 1, 1);
+        setTimeout(() => nextSlide.style.opacity = 1, 500);
         const prevSlide = nextSlide.previousElementSibling;
         if (prevSlide.style.position === 'absolute') {
             prevSlide.remove();
