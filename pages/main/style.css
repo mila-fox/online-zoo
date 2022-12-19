@@ -89,19 +89,25 @@
     position: relative;
 }
 
+.favorite .content {
+    position: relative;
+    overflow: hidden;
+}
+
 .favorite .arrow {
     width: 62px;
     height: 62px;
     border-radius: 50%;
     border: none;
     background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    z-index: 1;
 }
 
 .favorite .arrow.left img {
     transform: rotate(-180deg);
 }
 
-.favorite .arrow:active,
+.favorite .arrow:not(:disabled):active,
 .btn.online:active {
     background: #4b9200;
 }
@@ -164,6 +170,7 @@
     flex-wrap: wrap;
     row-gap: 20px;
     column-gap: 30px;
+    background: white;
 }
 
 .animals-list li {
