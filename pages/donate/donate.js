@@ -26,6 +26,12 @@ function handleAmountBlur() {
     }
 }
 
+function checkAmount(e) {
+    if (e.key === 'Enter') {
+        handleAmountBlur();
+    }
+}
+
 const amountInput = document.querySelector('.amount');
 const btnsAmount = document.querySelectorAll('.digit-scale li .btn-circle');
 
@@ -34,3 +40,5 @@ for (let btn of btnsAmount) {
 }
 
 amountInput.addEventListener('blur', handleAmountBlur);
+amountInput.addEventListener('keypress', checkAmount);
+
